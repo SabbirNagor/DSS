@@ -1,0 +1,144 @@
+/******* Default ********/
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+    border-color: #00964C;
+}
+.btn:focus, .btn-dark:focus {
+    background-color:none;
+    border-color: none;
+    box-shadow: none;
+}
+/******* Default ********/
+
+.personal_information_sec{
+  background-color: #e8f5ef;
+  background-image: url(../img/bgimage.png);
+  background-repeat: repeat;
+  height: 100vh;
+  position: relative;
+}
+.personal_information_inner{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width:100%;
+  height: auto;
+  transform: translate(-50%, -50%);
+
+}
+.personal_info_form{
+  background-color: #ffffff;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.12);
+}
+.personal_info_form_heading{
+  background-color: #00964C;
+  color: white;
+  padding: 10px 30px;
+  font-size: 25px;
+}
+.personal_info_inner_form{
+    padding: 10px 30px;
+}
+.personal_info_inner_form .form-control{
+    height: 55px;
+    border-radius: 0;
+}
+.employee_avatar_sec{
+    text-align: center;
+}
+img.employee_avatar{
+    max-height: 150px;
+}
+.employee_avatar_sec p{
+    color: #b9acaceb;
+}
+.employee_avatar_sec .btn_black{
+    min-width: 100px;
+    padding: 3px 30px;
+    font-size: 20px;
+    background-color: #525252;
+    border-color: #525252;
+}
+.gender_sec input{
+    display: none;
+}
+.gender_sec label{
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.gender_sec label span{
+    position: relative;
+    line-height: 22px;
+}
+.gender_sec label span::before,
+.gender_sec label span::after{
+    content: '';
+}
+.gender_sec label span::before{
+    border: 1px solid #ccc;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.gender_sec label span::after{
+    background: #222021;
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 4px;;
+    transition: 300ms;
+    opacity: 0
+}
+.gender_sec label input:checked+span:after {
+    opacity: 1;
+  }
+.submit_sec{
+    text-align: right;
+    margin-bottom: 30px;
+}
+.submit_button{
+    min-width: 140px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #00964C;
+    border:1px solid #00964C;
+    color: #ffffff;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.submit_button:hover{
+    background-color: #ffffff;
+    color: #00964C;
+    border:1px solid #00964C;
+}
+/******************** Responsive ***************************/
+@media (max-width: 768px) {
+.personal_information_sec{
+    height:100%;
+}
+.personal_info_form{
+    margin:30px 0;
+}
+.personal_information_inner{
+    position: relative;
+    top: inherit;
+    left: inherit;
+    transform: inherit;
+}
+.personal_info_inner_form .form-control {
+    height: 40px;
+}
+.submit_sec{
+    margin-top: 30px;
+}
+}

@@ -1,0 +1,83 @@
+.form-control:focus {
+    border-color: #00964C;
+    outline: 0;
+    box-shadow: none;
+}
+
+.dss_sec{
+    background-color: #e8f5ef;
+    background-image: url(../img/bgimage.png);
+    background-repeat: repeat;
+    height: 100vh;
+    position: relative;
+}
+.dss_inner_sec{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+.dss_form_sec{
+    background-color: #ffffff;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0 1px 5px 0 rgba(50, 50, 50, 0.12);
+}
+
+.dss_form_heading {
+    background-color: #00964C;
+    color: white;
+    padding: 10px 30px;    
+    text-align: center;    
+}
+.dss_form_heading h3{
+    font-size: 25px;
+    font-weight: 900;
+    margin:0;
+}
+.dss_form_inner{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.submit_sec{
+    text-align: center;
+    margin-top: 20px;
+}
+.submit_button {
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #009245;
+    color: white;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+select.form-control{
+    height: 55px;
+    background: url('../img/select.png') no-repeat right;
+    -webkit-appearance: none;
+    background-position-x: 98%;
+}
+.dss_form_inner label{
+    color: #000000;
+    font-size: 25px;
+}
+@media (max-width: 767px) {
+    .dss_sec{
+        height: auto;
+    }
+    .dss_inner_sec {
+        position: relative;
+        top: inherit;
+        left: inherit;
+        transform: inherit;
+        padding: 50px 0;
+    }
+    .dss_form_inner{
+        padding: 30px 15px;
+    }
+}
